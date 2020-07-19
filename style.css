@@ -1,60 +1,80 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 body {
     background: white;
-    color: #444;
-    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
   }
 
-a:focus {
-  color: #0b6bd3;
-  outline: none;
+#disp{
+  background-image: url(./img/back.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height:85vh;
+  padding: 0 18px;
+  text-align: center;
+  align-items: center;
+}
+
+#disp h1{
+  font-size: 40px;
+}
+
+#disp p{
+  font-size: 15px;
+}
+
+#disp .button{
+  font-size: 20px;
   text-decoration: none;
+  color: black;
+  border: black 2px solid;
+  padding: 10px 15px;
+  border-radius: 12px;
+  margin-top: 15px;
 }
 
-a:active {
-    color: #0b6bd3;
-    outline: none;
-    text-decoration: none;
+#disp .button:hover{
+  background: black;
+  color:white;
+}
+#section-a{
+  display: flex;
+}
+#section-a div{
+  padding: 15px;
+}
+#section-a .box-1, #section-a .box-3, #section-a .box-5, #section-a .box-7, #section-a .box-9, #section-a .box-11{
+  background:  black;
+  color: green;
+  text-align: center;
+}
+#section-a .box-2, #section-a .box-4, #section-a .box-6, #section-a .box-8, #section-a .box-10, #section-a .box-12{
+background: white;
+color: green;
+text-align: center;
 }
 
-a:hover {
-    color: #0b6bd3;
-    outline: none;
-    text-decoration: none;
+#footer {
+  background: #00428a;
+  padding: 0 0 30px 0;
+  color: #eee;
+  font-size: 14px;
 }
 
-.back-to-top {
-    position: fixed;
-    display: none;
-    background: #007bff;
-    color: white;
-    width: 44px;
-    height: 44px;
-    text-align: center;
-    line-height: 1;
-    font-size: 16px;
-    border-radius: 50%;
-    right: 15px;
-    bottom: 15px;
-    transition: background 0.5s;
-    z-index: 11;
-  }
+#footer .footer-top {
+  background: #004a99;
+  padding: 60px 0 30px 0;
+}
 
-  .back-to-top i {
-    padding-top: 10px;
-    color: white;
-  }
-
-  #header {
-    height: 90px;
-    transition: all 0.5s;
-    z-index: 997;
-    transition: all 0.5s;
-    padding: 20px 0;
-    background: white;
-    box-shadow: 0px 0px 25px rgba(127, 137, 161, 0.3);
-  }
-
-  #header.header-scrolled {
-  height: 70px;
-  padding: 15px 0;
+#footer .footer-top .footer-info {
+  margin-bottom: 30px;
 }
